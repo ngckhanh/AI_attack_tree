@@ -1,8 +1,7 @@
 ## Stuxnet (2010)
 ```
-.
-└── GOAL: Physically Damage Centrifuges (Root Node)
-    ├── AND: G1: Achieve Control of PLCs.
+ GOAL: Physically Damage Centrifuges (Root Node)
+    └── AND: G1: Achieve Control of PLCs.
     ├── AND: G2: Modify PLC Code.
     ├── AND: G3: Execute Payload.
     │   ├── AND: G3.1: Inject Malicious Code into PLC (Altering centrifuge frequency/speed).
@@ -40,4 +39,12 @@ GOAL: Cause Power Outage & Delay Recovery (Root Node)
         └── AND: Wipe Critical Files/OS AND Disrupt Operator Communications
             ├── Leaf: Wipe Servers/Workstations with KillDisk
             └── Leaf: Telephony DoS Attack on Call Center (Preventing Customer Reports)
+```
+
+## TRITON – Attack on Safety Systems (SIS) (2017)
+```
+```
+
+## The Attack on Oldsmar Water Treatment Plant, Florida (2021)
+```
 ```
