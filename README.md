@@ -1,7 +1,7 @@
 ## Stuxnet (2010)
 ```
 GOAL: Physically Damage Centrifuges (Root Node)
-└── AND: G1: Achieve Control of PLCs.
+├── AND: G1: Achieve Control of PLCs.
 ├── AND: G2: Modify PLC Code.
 ├── AND: G3: Execute Payload.
 │   ├── AND: G3.1: Inject Malicious Code into PLC (Altering centrifuge frequency/speed).
