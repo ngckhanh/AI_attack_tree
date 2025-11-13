@@ -43,6 +43,28 @@ GOAL: Cause Power Outage & Delay Recovery (Root Node)
 
 ## TRITON – Attack on Safety Systems (SIS) (2017)
 ```
+GOAL: Cause Physical Damage / Unsafe State (Explosion/Fire)
+└── AND: Compromise Corporate IT AND Pivot to OT Network AND Deploy TRITON Framework
+    ├── AND: Compromise Corporate IT (Initial Access & Persistence)
+    │   ├── OR: Phishing Attack OR Exploit External Services
+    │   │   ├── Leaf: Phishing Email (Targeted Malicious Attachments)
+    │   │   └── Leaf: Exploit External VPN/RDP Access
+    │   └── AND: Lateral Movement AND Credential Harvesting
+    │       ├── Leaf: Harvest Credentials (Mimikatz/SecHack from Memory)
+    │       └── Leaf: Establish Persistence (Cryptcat/Web Shells/Renamed Binaries)
+    ├── AND: Pivot to OT Network (Lateral Movement)
+    │   ├── OR: Traverse DMZ via Misconfiguration OR Admin Tools
+    │   │   ├── Leaf: Exploit Firewall Misconfigurations between IT/OT
+    │   │   └── Leaf: Use RDP/PsExec to Jump Box (Living off the Land)
+    │   └── Leaf: Compromise Engineering Workstation (SIS Engineering Station)
+    └── AND: Deploy TRITON Framework (Cyber-Physical Payload)
+        ├── AND: Reconnaissance AND Injection AND Logic Modification
+        │   ├── Leaf: Reverse Engineer TriStation Protocol (UDP 1502)
+        │   ├── Leaf: Identify Target Controller (Schneider Electric Triconex MP3008)
+        │   └── Leaf: Inject Malware via Zero-Day Firmware Exploit (Get Execute Primitive)
+        └── AND: Execution (Attempted Unsafe State)
+            ├── Leaf: Modify Logic to Disable Failsafes (Prevent Safety Trip)
+            └── Leaf: Controller Crash (Attack Failure due to Validator Check/Safe Mode Trip)
 ```
 
 ## The Attack on Oldsmar Water Treatment Plant, Florida (2021)
