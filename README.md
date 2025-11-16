@@ -69,4 +69,18 @@ GOAL: Cause Physical Damage / Unsafe State (Explosion/Fire)
 
 ## The Attack on Oldsmar Water Treatment Plant, Florida (2021)
 ```
+GOAL: Cause Public Harm via Water Contamination (Root Node)
+└── AND: Gain Unauthorized Access AND Manipulate Treatment Process
+    ├── AND: Gain Unauthorized Access to SCADA System
+    │   └── AND: Identify Access Vector AND Bypass Authentication
+    │       ├── Leaf: Scan for internet-facing TeamViewer
+    │       └── OR: Exploit Vulnerability OR Use Weak Credentials
+    │           ├── Leaf: Exploit outdated Windows 7 OS
+    │           └── Leaf: Brute-force/guess shared TeamViewer password
+    │
+    └── AND: Manipulate Water Treatment Process
+        └── AND: Access HMI Controls AND Modify Chemical Setpoint
+            ├── Leaf: Take remote control of operator's workstation
+            ├── Leaf: Open HMI software controlling the process
+            └── Leaf: Change sodium hydroxide setpoint to 11,100 ppm
 ```
